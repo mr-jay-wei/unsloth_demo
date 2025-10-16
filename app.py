@@ -28,7 +28,7 @@ model_pre, tokenizer = FastLanguageModel.from_pretrained(
     max_seq_length = max_seq_length,
     dtype = dtype,
     load_in_4bit = load_in_4bit,
-    # token = "hf_...", # use one if using gated models like meta-llama/Llama-2-7b-hf
+    # token = "hf_...", # use one if using gated models like meta-llama/Llama-2-7b-hf等非unsloth预制好的模型时使用
 )
 
 # 主要修改model_pre 和 target_modules
